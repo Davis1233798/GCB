@@ -1,0 +1,14 @@
+﻿<Page
+    x:Class="PasswordChecker.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PasswordChecker">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Left" Margin="168,165,0,0">
+            <PasswordBox Name="PasswordTextBox" PlaceholderText="Enter password" PasswordRevealMode="Peek" Width="200" Margin="10" />
+            <Button Content="Check Password" Click="OnCheckPassword" Width="200" Margin="10" />
+            <TextBlock Name="ResultTextBlock" Margin="10" />
+        </StackPanel>
+    </Grid>
+</Page>
